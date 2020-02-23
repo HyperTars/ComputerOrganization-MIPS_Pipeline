@@ -1,0 +1,475 @@
+m255
+K3
+13
+cModel Technology
+d\\Mac\Home\Desktop\ComputerOrganization\MIPS_L
+T_opt
+V612b;1BT=_:9?fmJZPCFX1
+04 7 4 work mips_tb fast 0
+=1-001c42e964dc-591afa67-51-1228
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.1c;51
+valu
+!s100 5JBZ8?>@DPfXB8HK9ZX1L1
+IK<C3hm9ib3>GkEM_@2HAS0
+VfNTfN?Ek8^eeYIHO@^1571
+Z0 d\\Mac\Home\Desktop\ComputerOrganization\MIPS_L_PipeLine
+w1494238530
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/alu.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/alu.v
+L0 2
+Z1 OL;L;10.1c;51
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/alu.v|
+Z2 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s108 1494940252.911000
+!s107 ctrl_encode_def.v|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/alu.v|
+!i10b 1
+!s85 0
+vbrancher
+!s100 5ON]=kZK5fRj4^U^5H_H`1
+IP9a_WYMdiTAobdFeOD^R51
+ViOSgn7A4T<g?2<mBd5]hn0
+Z3 d\\Mac\Home\Desktop\ComputerOrganization\MIPS_L_PipeLine
+w1494839440
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/brancher.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/brancher.v
+L0 3
+R1
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/brancher.v|
+R2
+!s108 1494940253.003000
+!s107 instruction_def.v|ctrl_encode_def.v|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/brancher.v|
+!i10b 1
+!s85 0
+vbyPasser
+!s100 ]zZ;C3kVUR9=Qi=ajX3ka2
+I?V@fVZ[5>`6@01oGa9;]`2
+VDd^?hzAIAU_25e84AEm4S2
+R3
+w1494387312
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/ByPasser.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/ByPasser.v
+L0 4
+R1
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/ByPasser.v|
+R2
+nby@passer
+!s108 1494940253.190000
+!s107 instruction_def.v|ctrl_encode_def.v|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/ByPasser.v|
+!i10b 1
+!s85 0
+vctrl
+!s100 W4?O09d;=A:^n3nKoSnkh3
+ILWbm7i7Xa1MC8<g<SB8760
+VG`?I?>Zi6oED1:k]5RncA2
+R3
+w1494922620
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/ctrl.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/ctrl.v
+L0 3
+R1
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/ctrl.v|
+R2
+!s108 1494940253.315000
+!s107 instruction_def.v|ctrl_encode_def.v|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/ctrl.v|
+!i10b 1
+!s85 0
+vdm_4k
+!s100 cC2VTf1mBMh69GdO@QPO^0
+I1AQn;3`WXlme0Yca1=N?K0
+VbI3zNHma;]]mKAg4:6LVj2
+R3
+w1494559428
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/dm.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/dm.v
+L0 1
+R1
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/dm.v|
+R2
+!s108 1494940253.487000
+!s107 //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/dm.v|
+!i10b 1
+!s85 0
+vEXT
+!s100 8^<Q_h@6BgadOEVomd:022
+I@9DUR`NZz]TV6V^zRZ01P2
+VkP?W4T^9d29_a?HHBFR]61
+R3
+w1494381358
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/EXT.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/EXT.v
+L0 2
+R1
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/EXT.v|
+R2
+n@e@x@t
+!s108 1494940253.612000
+!s107 ctrl_encode_def.v|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/EXT.v|
+!i10b 1
+!s85 0
+vflopr
+!s100 Kng``1lJzFiomH[Kfd5O@3
+I?bI<?=<2[7_j]Ifl>??>L1
+V]P_f@>=6G=?GDdBCzB=NS3
+R3
+Z4 w1494917133
+Fflopr.v
+Z5 8//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_MEM_WB.v
+Z6 F//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_MEM_WB.v
+L0 1
+R1
+r1
+31
+Z7 !s108 1494940256.128000
+Z8 !s107 flopr.v|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_MEM_WB.v|
+Z9 !s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_MEM_WB.v|
+R2
+!i10b 1
+!s85 0
+vHazardDetector
+!s100 IV`:LlYKSdDMW1HL:16>z0
+I3<0Go>]JT6k^l62BI;Fgz1
+V_foX2?QVORaGPolS^hI>a0
+R3
+w1494838772
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/HazardDetector.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/HazardDetector.v
+L0 1
+R1
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/HazardDetector.v|
+R2
+n@hazard@detector
+!s108 1494940253.940000
+!s107 //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/HazardDetector.v|
+!i10b 1
+!s85 0
+vim_4k
+!s100 4[FnMX4``:STW4mGlG4;60
+IfIO9NMkk9YRh<VT<CPm3F0
+VNT5U=;48`X5XLP8Af1l[f2
+R3
+w1492672270
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/im.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/im.v
+L0 1
+R1
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/im.v|
+R2
+!s108 1494940254.065000
+!s107 //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/im.v|
+!i10b 1
+!s85 0
+vIR
+!s100 C<zL3`;j5J4hVke=6bbb10
+ImdAILMlZhZPQ`RQVdT3Nz0
+VdoiokPZdC@Pj=oAcaieao3
+R3
+w1492672272
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/IR.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/IR.v
+L0 1
+R1
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/IR.v|
+R2
+n@i@r
+!s108 1494940254.237000
+!s107 //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/IR.v|
+!i10b 1
+!s85 0
+vjumper
+!s100 dnmAEZzgj@=daRn0L4l6P3
+Ij`FSA5_Qk`BF80U^R23PZ2
+VONonVgDQUa78:4?R?B2HG2
+R3
+w1494916325
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/jumper.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/jumper.v
+L0 3
+R1
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/jumper.v|
+R2
+!s108 1494940254.315000
+!s107 ctrl_encode_def.v|instruction_def.v|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/jumper.v|
+!i10b 1
+!s85 0
+vMemExtender
+!s100 oQo;Zjfhgz<fW_eVm0LQK3
+I=Ta:5K26FE];V0R_zl_^g3
+VUE^?mUh91h8UO0zIeVnej2
+R3
+w1492774696
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/MemExtender.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/MemExtender.v
+L0 2
+R1
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/MemExtender.v|
+R2
+n@mem@extender
+!s108 1494940254.472000
+!s107 ctrl_encode_def.v|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/MemExtender.v|
+!i10b 1
+!s85 0
+vmips
+!s100 kDlCI5lQ?3RQIL1]LR7>R2
+IcFK;>4Fc:8_aDSVDgI`^K3
+V^lO[ZOI0I1e8M8GJjI9B:3
+R3
+w1494919951
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/mips.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/mips.v
+L0 22
+R1
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/mips.v|
+R2
+!s108 1494940254.597000
+!s107 //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/mips.v|
+!i10b 1
+!s85 0
+vmips_tb
+IIACJooeYzT_;z>?NTOOfC2
+VHfL@J;=TiSmbe>@j83EoJ0
+R3
+w1494940122
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/mips_tb.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/mips_tb.v
+L0 1
+R1
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/mips_tb.v|
+R2
+!s100 d0mRQ`hOlR;n[Nj@hFaOB1
+!s108 1494940254.737000
+!s107 //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/mips_tb.v|
+!i10b 1
+!s85 0
+vmux16
+!s100 O8e0=oDdLf4zOCeO1@7Oc1
+IfIkKkP[]Fe9@adI:9zb;=1
+V`6=HBldE>cXC;m]K0;QI>0
+R3
+Z10 w1492672346
+Z11 8//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/mux.v
+Z12 F//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/mux.v
+L0 71
+R1
+r1
+31
+Z13 !s108 1494940254.879000
+Z14 !s107 //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/mux.v|
+Z15 !s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/mux.v|
+R2
+!i10b 1
+!s85 0
+vmux2
+!s100 TXU0]E8;kOamM>9@Q]HeX3
+I3eXk@O0`6nR3GUNkn4zA62
+VT8RWJBjAIeM]>7U=5kBkT1
+R3
+R10
+R11
+R12
+L0 2
+R1
+r1
+31
+R13
+R14
+R15
+R2
+!i10b 1
+!s85 0
+vmux4
+!s100 Fdn_dA<XAm]Y:d8JXb6mR1
+Ib;1BiW4ETg6=JSNLJkkQe3
+V@m74j;^3XFJ7>OzQXh6V`0
+R3
+R10
+R11
+R12
+L0 15
+R1
+r1
+31
+R13
+R14
+R15
+R2
+!i10b 1
+!s85 0
+vmux8
+!s100 XRmIld:1`YHDC^16Fh2CF0
+I7okkefWN8Jmnl]?1degc^3
+VOh>X<_n?620Z_^H7^I9KH2
+R3
+R10
+R11
+R12
+L0 40
+R1
+r1
+31
+R13
+R14
+R15
+R2
+!i10b 1
+!s85 0
+vNPC
+!s100 AUm^_CgCQMfV`dz>M5nnW1
+Izn7M6Sn?GgGP8eVT_gP>m1
+VME2Mk>HJ@LAL:WolW2CS32
+R3
+w1494915930
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/NPC.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/NPC.v
+L0 2
+R1
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/NPC.v|
+R2
+n@n@p@c
+!s108 1494940255.081000
+!s107 ctrl_encode_def.v|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/NPC.v|
+!i10b 1
+!s85 0
+vPC
+!s100 MESP[[d_UZhO`[99c3Y9W1
+IU@9L7PYB6gg9zFo=zZ<K]2
+VH:WWEmEz7L`;6@3TmMz>W3
+R3
+w1493953310
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/PC.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/PC.v
+L0 1
+R1
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/PC.v|
+R2
+n@p@c
+!s108 1494940255.206000
+!s107 //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/PC.v|
+!i10b 1
+!s85 0
+vReg_EX_MEM
+!s100 oFT69G8@:ihT4VMV6CHT93
+IWVRWKMaM`3^Aa3hZW5g0K2
+V4Td_O@3^JTL:;Ze5Uzkzg1
+R3
+w1494917041
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_EX_MEM.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_EX_MEM.v
+L0 2
+R1
+r1
+31
+!s108 1494940255.346000
+!s107 flopr.v|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_EX_MEM.v|
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_EX_MEM.v|
+R2
+n@reg_@e@x_@m@e@m
+!i10b 1
+!s85 0
+vReg_ID_EX
+!s100 U^g8jhKBY@8]=]Y>Re4VS1
+Ib9Mnl_R^mgmbZCf@NHmB73
+VSji5WJ5g5a2J[T[TI<H1o1
+R3
+w1494917168
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_ID_EX.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_ID_EX.v
+L0 2
+R1
+r1
+31
+!s108 1494940255.503000
+!s107 flopr.v|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_ID_EX.v|
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_ID_EX.v|
+R2
+n@reg_@i@d_@e@x
+!i10b 1
+!s85 0
+vReg_IF_ID
+!s100 e=ILmB<dGUC>hKc>>_X<[3
+IL>19CE8k>a<g;@T_8B4Lf1
+VB>;OL_4PBFZAe3:WU2INV1
+R3
+w1494916062
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_IF_ID.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_IF_ID.v
+L0 2
+R1
+r1
+31
+!s108 1494940255.660000
+!s107 flopr.v|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_IF_ID.v|
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_IF_ID.v|
+R2
+n@reg_@i@f_@i@d
+!i10b 1
+!s85 0
+vReg_MEM_WB
+!s100 MP>08NKlP9Ad8DgD[AdAQ0
+IL2S1W`2`02SV^k044AEzg0
+VWMX:Pi1V3Tk0@8S:;XXA92
+R3
+R4
+R5
+R6
+L0 2
+R1
+r1
+31
+R7
+R8
+R9
+R2
+n@reg_@m@e@m_@w@b
+!i10b 1
+!s85 0
+vRF
+!s100 A[^MiTO6^3]51m=KR8O582
+I_?o]OBEBidUegQ;I4nfz:0
+V>m8H_>Z_GWe1OmYLG6niP1
+R3
+w1494680480
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/RF.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/RF.v
+L0 2
+R1
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/RF.v|
+R2
+n@r@f
+!i10b 1
+!s85 0
+!s108 1494940256.565000
+!s107 global_def.v|//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/RF.v|

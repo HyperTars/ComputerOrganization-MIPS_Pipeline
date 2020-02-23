@@ -1,0 +1,156 @@
+//Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/ctrl.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/ctrl.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module ctrl
+
+Top level modules:
+	ctrl
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/brancher.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/brancher.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module brancher
+
+Top level modules:
+	brancher
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_ID_EX.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_ID_EX.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module flopr
+-- Compiling module Reg_ID_EX
+
+Top level modules:
+	Reg_ID_EX
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/mips_tb.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/mips_tb.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module mips_tb
+
+Top level modules:
+	mips_tb
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/im.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/im.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module im_4k
+
+Top level modules:
+	im_4k
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_IF_ID.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_IF_ID.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module flopr
+-- Compiling module Reg_IF_ID
+
+Top level modules:
+	flopr
+	Reg_IF_ID
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/ctrl_encode_def.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/ctrl_encode_def.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/instruction_def.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/instruction_def.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/NPC.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/NPC.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module NPC
+
+Top level modules:
+	NPC
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/mips.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/mips.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module mips
+
+Top level modules:
+	mips
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/EXT.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/EXT.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module EXT
+
+Top level modules:
+	EXT
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/dm.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/dm.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module dm_4k
+
+Top level modules:
+	dm_4k
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/mux.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/mux.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module mux2
+-- Compiling module mux4
+-- Compiling module mux8
+-- Compiling module mux16
+
+Top level modules:
+	mux2
+	mux4
+	mux8
+	mux16
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/alu.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/alu.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/PC.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/PC.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/flopr.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/flopr.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module flopr
+
+Top level modules:
+	flopr
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_MEM_WB.v {2 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_MEM_WB.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module flopr
+** Warning: //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_MEM_WB.v(1): (vlog-2283) Extra semicolon in $unit (global) scope.
+
+-- Compiling module Reg_MEM_WB
+
+Top level modules:
+	Reg_MEM_WB
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/HazardDetector.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/HazardDetector.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module HazardDetector
+
+Top level modules:
+	HazardDetector
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/global_def.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/global_def.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_EX_MEM.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/Reg_EX_MEM.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module flopr
+-- Compiling module Reg_EX_MEM
+
+Top level modules:
+	Reg_EX_MEM
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/RF.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/RF.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module RF
+
+Top level modules:
+	RF
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/ByPasser.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L_PipeLine/ByPasser.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module byPasser
+
+Top level modules:
+	byPasser
+
+} {} {}}

@@ -1,0 +1,45 @@
+library verilog;
+use verilog.vl_types.all;
+entity ctrl is
+    generic(
+        Fetch           : vl_logic_vector(0 to 3) := (Hi0, Hi0, Hi0, Hi0);
+        DCD             : vl_logic_vector(0 to 3) := (Hi0, Hi0, Hi0, Hi1);
+        Exe             : vl_logic_vector(0 to 3) := (Hi0, Hi0, Hi1, Hi0);
+        MA              : vl_logic_vector(0 to 3) := (Hi0, Hi0, Hi1, Hi1);
+        Branch          : vl_logic_vector(0 to 3) := (Hi0, Hi1, Hi0, Hi0);
+        Jmp             : vl_logic_vector(0 to 3) := (Hi0, Hi1, Hi0, Hi1);
+        MR              : vl_logic_vector(0 to 3) := (Hi0, Hi1, Hi1, Hi0);
+        MW              : vl_logic_vector(0 to 3) := (Hi0, Hi1, Hi1, Hi1);
+        WB              : vl_logic_vector(0 to 3) := (Hi1, Hi0, Hi0, Hi0);
+        MemWB           : vl_logic_vector(0 to 3) := (Hi1, Hi0, Hi0, Hi1)
+    );
+    port(
+        clk             : in     vl_logic;
+        rst             : in     vl_logic;
+        Zero            : in     vl_logic;
+        Op              : in     vl_logic_vector(5 downto 0);
+        Funct           : in     vl_logic_vector(5 downto 0);
+        RFWr            : out    vl_logic;
+        DMWr            : out    vl_logic;
+        PCWr            : out    vl_logic;
+        IRWr            : out    vl_logic;
+        EXTOp           : out    vl_logic_vector(1 downto 0);
+        ALUOp           : out    vl_logic_vector(4 downto 0);
+        NPCOp           : out    vl_logic_vector(1 downto 0);
+        GPRSel          : out    vl_logic_vector(1 downto 0);
+        WDSel           : out    vl_logic_vector(1 downto 0);
+        ASel            : out    vl_logic;
+        BSel            : out    vl_logic
+    );
+    attribute mti_svvh_generic_type : integer;
+    attribute mti_svvh_generic_type of Fetch : constant is 1;
+    attribute mti_svvh_generic_type of DCD : constant is 1;
+    attribute mti_svvh_generic_type of Exe : constant is 1;
+    attribute mti_svvh_generic_type of MA : constant is 1;
+    attribute mti_svvh_generic_type of Branch : constant is 1;
+    attribute mti_svvh_generic_type of Jmp : constant is 1;
+    attribute mti_svvh_generic_type of MR : constant is 1;
+    attribute mti_svvh_generic_type of MW : constant is 1;
+    attribute mti_svvh_generic_type of WB : constant is 1;
+    attribute mti_svvh_generic_type of MemWB : constant is 1;
+end ctrl;

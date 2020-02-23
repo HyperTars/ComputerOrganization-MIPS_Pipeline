@@ -1,0 +1,22 @@
+library verilog;
+use verilog.vl_types.all;
+entity Reg_ID_EX is
+    port(
+        clk             : in     vl_logic;
+        rst             : in     vl_logic;
+        stallSignal     : in     vl_logic;
+        nonSeq          : in     vl_logic;
+        ID_instr_r      : in     vl_logic_vector(31 downto 0);
+        ID_EX_instr     : out    vl_logic_vector(31 downto 0);
+        RD1             : in     vl_logic_vector(31 downto 0);
+        RD2             : in     vl_logic_vector(31 downto 0);
+        ImmExt          : in     vl_logic_vector(31 downto 0);
+        RD1_ID_EX_r     : out    vl_logic_vector(31 downto 0);
+        RD2_ID_EX_r     : out    vl_logic_vector(31 downto 0);
+        ImmExt_r        : out    vl_logic_vector(31 downto 0);
+        brSignal        : in     vl_logic;
+        brSignal_r      : out    vl_logic;
+        IF_ID_PC_r      : in     vl_logic_vector(29 downto 0);
+        ID_EX_PC_r      : out    vl_logic_vector(29 downto 0)
+    );
+end Reg_ID_EX;

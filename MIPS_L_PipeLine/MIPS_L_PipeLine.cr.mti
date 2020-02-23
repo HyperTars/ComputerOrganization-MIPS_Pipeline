@@ -1,0 +1,230 @@
+F:/ComputerDesign/2017/MIPS_L_PipeLine/ctrl.v {1 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/ctrl.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module ctrl
+
+Top level modules:
+	ctrl
+
+} {} {}} F:/ComputerDesign/2017/MIPS_L_PipeLine/brancher.v {1 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/brancher.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module brancher
+
+Top level modules:
+	brancher
+
+} {} {}} F:/ComputerDesign/2017/MIPS_L_PipeLine/Reg_ID_EX.v {1 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/Reg_ID_EX.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module flopr
+-- Compiling module Reg_ID_EX
+
+Top level modules:
+	Reg_ID_EX
+
+} {} {}} F:/ComputerDesign/2017/MIPS_L_PipeLine/mips_tb.v {1 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/mips_tb.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module mips_tb
+
+Top level modules:
+	mips_tb
+
+} {} {}} F:/ComputerDesign/2017/MIPS_L_PipeLine/im.v {1 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/im.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module im_4k
+
+Top level modules:
+	im_4k
+
+} {} {}} F:/ComputerDesign/2017/MIPS_L_PipeLine/Reg_IF_ID.v {1 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/Reg_IF_ID.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module flopr
+-- Compiling module Reg_IF_ID
+
+Top level modules:
+	Reg_IF_ID
+
+} {} {}} F:/ComputerDesign/2017/MIPS_L_PipeLine/ctrl_encode_def.v {1 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/ctrl_encode_def.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+
+} {} {}} F:/ComputerDesign/2017/MIPS_L_PipeLine/instruction_def.v {1 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/instruction_def.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+
+} {} {}} F:/ComputerDesign/2017/MIPS_L_PipeLine/NPC.v {1 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/NPC.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module NPC
+
+Top level modules:
+	NPC
+
+} {} {}} F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v {0 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module mips
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(89): Checker 'PC' not found.  Instantiation 'U_PC' must be of a visible checker.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(96): Checker 'NPC' not found.  Instantiation 'U_NPC' must be of a visible checker.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(101): Checker 'im_4k' not found.  Instantiation 'U_IM' must be of a visible checker.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(110): Checker 'Reg_IF_ID' not found.  Instantiation 'U_Reg_IF_ID' must be of a visible checker.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(120): Checker 'ctrl' not found.  Instantiation 'ID_ctrl' must be of a visible checker.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(132): Checker 'HazardDetector' not found.  Instantiation 'U_HazardDetector' must be of a visible checker.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(139): Checker 'RF' not found.  Instantiation 'U_RF' must be of a visible checker.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(146): Checker 'EXT' not found.  Instantiation 'U_EXT' must be of a visible checker.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(155): Checker 'brancher' not found.  Instantiation 'U_brancher' must be of a visible checker.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(165): Checker 'jumper' not found.  Instantiation 'U_jumper' must be of a visible checker.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(170): (vlog-2730) Undefined variable: 'ID_EX_PC_Add_r'.
+
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(174): near ")": syntax error, unexpected ')', expecting .* or '.'
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(184): Checker 'ctrl' not found.  Instantiation 'EX_ctrl' must be of a visible checker.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(193): Checker 'byPasser' not found.  Instantiation 'U_byPasser' must be of a visible checker.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(196): (vlog-2730) Undefined variable: 'mux4'.
+
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(196): near "#": syntax error, unexpected '#'
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(212): (vlog-2730) Undefined variable: 'mux2'.
+
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(218): (vlog-2730) Undefined variable: 'Zero'.
+
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(219): Checker 'alu' not found.  Instantiation 'U_ALU' must be of a visible checker.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(222): near "#": syntax error, unexpected '#'
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(230): (vlog-2730) Undefined variable: 'EX_MEM_PC_Add_r'.
+
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(234): Checker 'Reg_EX_MEM' not found.  Instantiation 'U_Reg_EX_MEM' must be of a visible checker.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(244): Checker 'ctrl' not found.  Instantiation 'MEM_ctrl' must be of a visible checker.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(253): Checker 'dm_4k' not found.  Instantiation 'U_DM' must be of a visible checker.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(258): (vlog-2730) Undefined variable: 'MEM_WB_PC_Add_r'.
+
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(263): Checker 'Reg_MEM_WB' not found.  Instantiation 'U_Reg_MEM_WB' must be of a visible checker.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(272): (vlog-2730) Undefined variable: 'instr'.
+
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(274): Checker 'ctrl' not found.  Instantiation 'WB_ctrl' must be of a visible checker.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(277): near "#": syntax error, unexpected '#'
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(89): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(96): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(101): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(110): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(120): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(132): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(139): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(146): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(155): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(165): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(184): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(193): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(219): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(234): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(244): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(253): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(263): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: F:/ComputerDesign/2017/MIPS_L_PipeLine/mips.v(274): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+
+} {4.0 15.0 16.0 20.0 21.0 23.0 24.0 25.0 26.0 29.0 30.0 34.0 35.0 37.0 38.0 58.0} {}} F:/ComputerDesign/2017/MIPS_L_PipeLine/dm.v {1 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/dm.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module dm_4k
+
+Top level modules:
+	dm_4k
+
+} {} {}} F:/ComputerDesign/2017/MIPS_L_PipeLine/EXT.v {1 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/EXT.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module EXT
+
+Top level modules:
+	EXT
+
+} {} {}} F:/ComputerDesign/2017/MIPS_L_PipeLine/mux.v {1 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/mux.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module mux2
+-- Compiling module mux4
+-- Compiling module mux8
+-- Compiling module mux16
+
+Top level modules:
+	mux2
+	mux4
+	mux8
+	mux16
+
+} {} {}} F:/ComputerDesign/2017/MIPS_L_PipeLine/alu.v {1 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/alu.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} F:/ComputerDesign/2017/MIPS_L_PipeLine/PC.v {1 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/PC.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} F:/ComputerDesign/2017/MIPS_L_PipeLine/jumper.v {1 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/jumper.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module jumper
+
+Top level modules:
+	jumper
+
+} {} {}} F:/ComputerDesign/2017/MIPS_L_PipeLine/IR.v {1 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/IR.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module IR
+
+Top level modules:
+	IR
+
+} {} {}} F:/ComputerDesign/2017/MIPS_L_PipeLine/flopr.v {1 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/flopr.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module flopr
+
+Top level modules:
+	flopr
+
+} {} {}} F:/ComputerDesign/2017/MIPS_L_PipeLine/Reg_MEM_WB.v {2 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/Reg_MEM_WB.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module flopr
+** Warning: F:/ComputerDesign/2017/MIPS_L_PipeLine/Reg_MEM_WB.v(1): (vlog-2283) Extra semicolon in $unit (global) scope.
+
+-- Compiling module Reg_MEM_WB
+
+Top level modules:
+	Reg_MEM_WB
+
+} {} {}} F:/ComputerDesign/2017/MIPS_L_PipeLine/HazardDetector.v {1 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/HazardDetector.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module HazardDetector
+
+Top level modules:
+	HazardDetector
+
+} {} {}} F:/ComputerDesign/2017/MIPS_L_PipeLine/MemExtender.v {1 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/MemExtender.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module MemExtender
+
+Top level modules:
+	MemExtender
+
+} {} {}} F:/ComputerDesign/2017/MIPS_L_PipeLine/global_def.v {1 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/global_def.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+
+} {} {}} F:/ComputerDesign/2017/MIPS_L_PipeLine/RF.v {1 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/RF.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module RF
+
+Top level modules:
+	RF
+
+} {} {}} F:/ComputerDesign/2017/MIPS_L_PipeLine/Reg_EX_MEM.v {2 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/Reg_EX_MEM.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module flopr
+** Warning: flopr.v(1): (vlog-2275) 'flopr' already exists and will be overwritten.
+
+-- Compiling module flopr
+-- Compiling module Reg_EX_MEM
+
+Top level modules:
+	Reg_EX_MEM
+
+} {} {}} F:/ComputerDesign/2017/MIPS_L_PipeLine/ByPasser.v {1 {vlog -work work -vopt F:/ComputerDesign/2017/MIPS_L_PipeLine/ByPasser.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module byPasser
+
+Top level modules:
+	byPasser
+
+} {} {}}

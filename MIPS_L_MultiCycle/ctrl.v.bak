@@ -1,0 +1,416 @@
+`include "ctrl_encode_def.v"
+`include "instruction_def.v"
+module ctrl(clk,	rst, Zero, Op, Funct,
+            RFWr, DMWr, PCWr, IRWr,
+            EXTOp, ALUOp, NPCOp, GPRSel,
+            WDSel, ASel, BSel); //New ASel
+    
+   input 		     clk, rst, Zero;       
+   input  [5:0] Op;
+   input  [5:0] Funct;
+   output       RFWr;
+   output       DMWr;
+   output       PCWr;
+   output       IRWr;
+   output [1:0] EXTOp;
+   output [4:0] ALUOp;
+   output [1:0] NPCOp;
+   output [1:0] GPRSel;
+   output [1:0] WDSel;
+   output [1:0] ASel; //New Asel
+   output       BSel; 
+    
+   parameter Fetch  = 4'b0000,
+             DCD    = 4'b0001,
+             Exe    = 4'b0010,
+             MA     = 4'b0011,
+             Branch = 4'b0100,
+             Jmp    = 4'b0101,
+             MR     = 4'b0110,
+             MW     = 4'b0111,
+             WB     = 4'b1000,
+             MemWB  = 4'b1001;
+    
+	
+   wire RType;   // Type of R-Type Instruction
+   wire IType;   // Tyoe of Imm    Instruction  
+   wire BrType;  // Type of Branch Instruction
+   wire JType;   // Type of Jump   Instruction
+   wire LdType;  // Type of Load   Instruction
+   wire StType;  // Type of Store  Instruction
+   wire MemType; // Type pf Memory Instruction(Load/Store)
+	
+	 //Complete All Type, set XType 1 if instrucion belongs to XType
+   assign RType   = (Op == `INSTR_RTYPE_OP);
+   assign IType   = (Op == `INSTR_ADDI_OP || Op == `INSTR_ADDIU_OP || Op == `INSTR_ANDI_OP || Op == `INSTR_ORI_OP || Op == `INSTR_XORI_OP || Op == `INSTR_LUI_OP || Op == `INSTR_SLTI_OP || Op == `INSTR_SLTIU_OP);
+   assign BrType  = (Op == `INSTR_BEQ_OP || Op == `INSTR_BNE_OP || Op == `INSTR_BGEZ_OP || Op == `INSTR_BGTZ_OP || Op == `INSTR_BLEZ_OP || Op == `INSTR_BLTZ_OP);
+   assign JType   = (Op == `INSTR_J_OP || Op == `INSTR_JAL_OP);
+	 assign LdType  = (Op == `INSTR_LW_OP || Op == `INSTR_LB_OP || Op == `INSTR_LH_OP || Op == `INSTR_LBU_OP || Op == `INSTR_LHU_OP);
+	 assign StType  = (Op == `INSTR_SW_OP || Op == `INSTR_SB_OP || Op == `INSTR_SH_OP);
+   assign MemType = LdType || StType;
+    
+	/*************************************************/
+	/******               FSM                   ******/
+   reg [3:0] nextstate;
+   reg [3:0] state;
+   
+   always @(posedge clk or posedge rst) begin
+	   if ( rst )
+		   state <= Fetch;
+      else
+         state <= nextstate;
+	 end // end always             
+             
+   //define mips NEXT_STATE sequence
+   always @(*) begin
+      case (state)
+         //Step1_Fetch Instruction
+         Fetch: nextstate = DCD;
+         
+         //Step2_DCD/RF_Decode & Register File
+         DCD: begin
+          if ( RType || IType ) //If decode RType or Iype, next state is Exe
+				   nextstate = Exe;
+            else if ( MemType ) //If decode MemType, next state is MA
+               nextstate = MA;
+            else if ( BrType )  //If decode BranchType, next state is branch (calculate whether and where in branch step)
+               nextstate = Branch;
+            else if ( JType )   //If decode JType, next state is Jump
+               nextstate = Jmp;
+            else   //if Op wrong, then fetch next one.
+               nextstate = Fetch;
+          end
+          
+         //Step3_Execution
+         Exe:  
+          if (Funct == `INSTR_JR_FUNCT)  //If decode JR_Type, next state is Jump
+            nextstate = Fetch;
+          else
+            nextstate = WB;
+         
+         //Step3_EXE_Branch
+         Branch: nextstate = Fetch;
+         
+         //Step3_EXE_Jump
+         Jmp: 	nextstate = Fetch;
+         
+         //Step4_Mem_Memory Access
+         MA: begin 
+            if ( LdType )
+				   nextstate = MR;   //LW, next step is Memory Read
+            else if ( StType )
+					 nextstate = MW;   //SW, next step is Memory Write
+			   end
+	        
+         //Step4_MEM_Memory Read
+         MR:   nextstate = MemWB;
+         
+         //Step4_MEM_Memory Write
+         MW:   nextstate = Fetch;
+         
+         //Step5_WB_Write ALUOut_r Back To Register File
+         WB: 	 nextstate = Fetch;
+         
+         //Step5_WB_Write Memory_Data_r Back To Register File
+         MemWB: nextstate = Fetch;      
+			 default: ;
+       endcase
+   end // end always
+	/*************************************************/	
+	
+	
+	
+	/*************************************************/
+	/******         Control Signal              ******/
+	 reg       RFWr;
+   reg       DMWr;
+   reg       PCWr;
+   reg       IRWr;
+   reg [1:0] EXTOp;
+   reg [4:0] ALUOp;
+   reg [1:0] NPCOp;
+   reg [1:0] GPRSel;
+   reg [1:0] WDSel;
+   reg [1:0] ASel; //New ASel
+   reg       BSel;
+	
+	//Define Control_Signal for each instruction in different step
+	always @( * ) begin
+	   case ( state ) 
+	     //Step1_Fetch
+		   Fetch: begin
+            PCWr   = 1'b1;
+            NPCOp  = `NPC_PLUS4; 
+            IRWr   = 1'b1;
+            RFWr  = 1'b0;
+            DMWr   = 1'b0;
+            EXTOp  = 0;
+            GPRSel = 0;
+            WDSel  = 0;
+            ASel   = 0; //New ASel
+            BSel   = 0;
+            ALUOp  = 0;
+			 end // end Fetch
+			
+			 //Step2_DCD_Decode & Register File
+       DCD: begin
+            PCWr   = 1'b0;
+            NPCOp  = 0;
+            IRWr   = 1'b0;
+            RFWr  = 1'b0;
+            DMWr   = 1'b0;
+            EXTOp  = 0;
+            GPRSel = 0;
+            WDSel  = 0;
+            ASel   = 0; //New Asel
+            BSel   = 0;
+            ALUOp  = 0;
+			 end	// end DCD
+			
+			 //Step3_Exe_Execution
+       Exe: 	begin
+            PCWr   = 1'b0;
+            NPCOp  = 0;
+            IRWr   = 1'b0;
+            RFWr  = 1'b0;
+            DMWr   = 1'b0;
+            ASel = 2'b00;
+            
+            if (IType) //If it is I-Type, Extend Instruction[15..0] to 32-bit
+               EXTOp = `EXT_UNSIGNED;
+            else
+               EXTOp = 0;
+               
+            GPRSel = 0;
+            WDSel  = 0;
+            DMWr   = 0;
+            
+            if (IType) //If it is I-Type, ALU_In_B comes from B_MUX:1
+               BSel   = 1'b1;
+            else
+               BSel   = 1'b0;
+            
+            //Define how ALU Exe when I-Type
+            if (IType)
+            begin
+              if (Op == `INSTR_ADDI_OP) ALUOp = `ALUOp_ADD;
+              else if(Op == `INSTR_ADDIU_OP) ALUOp = `ALUOp_ADD;
+              else if(Op == `INSTR_ANDI_OP) ALUOp = `ALUOp_AND;
+              else if(Op == `INSTR_ORI_OP) ALUOp = `ALUOp_OR;
+              else if(Op == `INSTR_XORI_OP) ALUOp = `ALUOp_XOR;
+              else if(Op == `INSTR_LUI_OP)
+                begin
+                  ALUOp = `ALUOp_SLL;
+                  ASel = 2'b01; //New, Key to select SLL's 16
+                end
+              else if(Op == `INSTR_SLTI_OP) ALUOp = `ALUOp_SLT;
+              else if(Op == `INSTR_SLTIU_OP) ALUOp = `ALUOp_SLT;
+            end
+            
+            //Define how ALU Exe when R-Type, default set to NOP
+            else if (Op == `INSTR_RTYPE_OP) 
+            begin
+               case (Funct)
+                   `INSTR_ADD_FUNCT: ALUOp = `ALUOp_ADD;
+                   `INSTR_ADDU_FUNCT: ALUOp = `ALUOp_ADDU;
+                   `INSTR_SUB_FUNCT: ALUOp = `ALUOp_SUB;
+                   `INSTR_SUBU_FUNCT: ALUOp = `ALUOp_SUBU;
+                   `INSTR_AND_FUNCT: ALUOp = `ALUOp_AND;
+                   `INSTR_NOR_FUNCT: ALUOp = `ALUOp_NOR;
+                   `INSTR_OR_FUNCT: ALUOp = `ALUOp_OR;
+                   `INSTR_XOR_FUNCT: ALUOp = `ALUOp_XOR;
+                   `INSTR_SLT_FUNCT: ALUOp = `ALUOp_SLT;
+                   `INSTR_SLTU_FUNCT: ALUOp = `ALUOp_SLTU;
+                   
+                   `INSTR_SLL_FUNCT: 
+                     begin
+                      ALUOp = `ALUOp_SLL;
+                      ASel = 2'b10;
+                     end
+                     
+                   `INSTR_SRL_FUNCT: 
+                     begin
+                      ALUOp = `ALUOp_SRL;
+                      ASel = 2'b10;
+                     end
+                     
+                   `INSTR_SRA_FUNCT:
+                     begin
+                      ALUOp = `ALUOp_SRA;
+                      ASel = 2'b10;
+                     end
+                     
+                   `INSTR_SLLV_FUNCT:
+                     begin
+                      ALUOp = `ALUOp_SLL;
+                      ASel = 2'b10;
+                      BSel = 1'b0;
+                     end
+                     
+                   `INSTR_SRLV_FUNCT:
+                     begin
+                      ALUOp = `ALUOp_SRL;
+                      ASel = 2'b10;
+                     end
+                     
+                   `INSTR_SRAV_FUNCT:
+                     begin
+                      ALUOp = `ALUOp_SRA;
+                      ASel = 2'b10;
+                     end
+                     
+                   `INSTR_JR_FUNCT: //remain to be done
+                     begin
+                      PCWr   = 1'b1;    //Force PC Jump, so PCWrie Enables
+                      NPCOp  = `NPC_JUMPR; //Force PC Jump
+                      IRWr   = 1'b0;
+                      DMWr   = 1'b0;
+                      EXTOp  = `EXT_SIGNED;
+                      ASel   = 0;
+                      BSel   = 0;
+                      ALUOp  = 0;  
+                     end
+                     
+                   //`INSTR_JALR_FUNCT: ALUOp = `ALUOp_JARL;
+                   //`ALUOp_EQL;
+                   //`ALUOp_BNE;
+                   //`ALUOp_GT0;
+                   //`ALUOp_GE0;
+                   //`ALUOp_LT0;
+                   //`ALUOp_LE0;
+                   default: ;
+               endcase
+            end
+			   end // end Exe
+			   
+			   //Step3_Branch
+         Branch: begin
+            if (Zero) //Zero's set linked to ALU_Compare (If (A = B), Zero = 1, PCWrite Enable
+               PCWr = 1'b1; //Enable PC Write
+            else
+               PCWr = 1'b0; //Disable PC Write, even NPCOp change to `NPC_BRANCH, it won't jump
+            NPCOp  = `NPC_BRANCH; //Set NPCOp = BRANCH
+            IRWr   = 1'b0;
+            RFWr   = 1'b0;
+            DMWr   = 1'b0;
+            EXTOp  = `EXT_SIGNED;
+            GPRSel = 0;
+            WDSel  = 0;
+            ASel   = 2'b0;  //Select Source A from Register File
+            BSel   = 1'b0;  //Select Source B from Register File
+            ALUOp  = `ALUOp_EQL;  //Calculae whether A = B
+			   end // end Branch
+			
+				 //Step3_Jump
+         Jmp: 	begin
+            PCWr   = 1'b1;    //Force PC Jump, so PCWrie Enables
+            NPCOp  = `NPC_JUMP; //Force PC Jump
+            IRWr   = 1'b0;
+            if (Op == `INSTR_J_OP) //when there's only J, Disable RegisterFile Write
+              RFWr = 1'b0;
+            else
+              RFWr  = 1'b1;
+            DMWr   = 1'b0;
+            EXTOp  = `EXT_SIGNED;
+            GPRSel = `GPRSel_31;
+            WDSel  = `WDSel_FromPC;
+            ASel   = 0;
+            BSel   = 0;
+            ALUOp  = 0;
+			   end // end Jmp
+			   
+			   //Step4_MA_Memory Access
+         MA: begin
+            PCWr   = 1'b0;
+            NPCOp  = 0;
+            IRWr   = 1'b0;
+            RFWr   = 1'b0;
+            DMWr   = 1'b0;
+            EXTOp  = `EXT_SIGNED;
+            GPRSel = 0;
+            WDSel  = 0;
+            ASel   = 0;
+            BSel   = 1'b1;
+            ALUOp  = `ALUOp_ADDU;
+			   end // end MA
+			   
+			   //Step4_Memory_Read
+         MR:  begin
+            PCWr   = 1'b0;
+            NPCOp  = 0;
+            IRWr   = 1'b0;
+            RFWr  = 1'b0;
+            DMWr   = 1'b0;
+            EXTOp  = 0;
+            GPRSel = 0;
+            WDSel  = 0;
+            ASel   = 0;
+            BSel   = 0;
+            ALUOp  = 0;
+			   end // end MR
+			   
+			   //Step4_Memory_Write
+         MW:  begin
+            PCWr   = 1'b0;
+            NPCOp  = 0;
+            IRWr   = 1'b0;
+            RFWr  = 1'b0;
+            DMWr   = 1'b1;
+            EXTOp  = 0;
+            GPRSel = 0;
+            WDSel  = 0;
+            ASel   = 0;
+            BSel   = 0;
+            ALUOp  = 0;
+			   end // end MW
+         
+         //Step5_ALU_WriteBack
+         WB: 	begin
+            PCWr   = 1'b0;
+            NPCOp  = 0;
+            IRWr   = 1'b0;
+            RFWr  = 1'b1;
+            DMWr   = 1'b0;
+            EXTOp  = 0;
+            if (IType)
+               GPRSel = `GPRSel_RT;
+            else
+               GPRSel = `GPRSel_RD;
+            WDSel  = `WDSel_FromALU;
+            ASel   = 0;
+            BSel   = 0;
+            ALUOp  = 0;
+			   end // end WB
+         
+         //Step5_Memory_Write_Back
+         MemWB: begin
+            PCWr   = 1'b0;
+            NPCOp  = 0;
+            IRWr   = 1'b0;
+            RFWr  = 1'b1;
+            DMWr   = 1'b0;
+            EXTOp  = 0;
+            GPRSel = `GPRSel_RT;
+            WDSel  = `WDSel_FromMEM;
+            ASel   = 0;
+            BSel   = 0;
+            ALUOp  = 0;
+			   end // end MemWB
+			   
+			default: begin
+            PCWr   = 1'b0;
+            NPCOp  = 0;
+            IRWr   = 1'b0;
+            RFWr  = 1'b0;
+            DMWr   = 1'b0;
+            EXTOp  = 0;
+            GPRSel = 0;
+            WDSel  = 0;
+            ASel   = 0;
+            BSel   = 0;
+            ALUOp  = 0;
+			end // end default
+	   endcase
+   end // end always
+    
+endmodule

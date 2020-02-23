@@ -1,0 +1,332 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\modeltech64_10.1c\examples
+T_opt
+VWXB?hedHZ`a_1ZbHm;3?40
+04 4 4 work ctrl fast 0
+=1-001c42e964dc-58fabdb0-19a-1748
+Z1 o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z2 OL;O;10.1c;51
+Z3 dC:\modeltech64_10.1c\examples
+T_opt1
+VLAQBVCTK9mW<A0c1hZ?nV3
+04 7 4 work mips_tb fast 0
+=1-001c42e964dc-58fac896-13a-1f30
+R1
+n@_opt1
+R2
+valu
+!s100 :]5HegNP[zQE[1m;X]63F2
+IgH;^P2S8>84LN1Y0nbQKa1
+V8zAZJaVNTFSVRLe<PJ::H3
+Z4 d\\Mac\Home\Desktop\ComputerOrganization\MIPS_L
+w1492776436
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L/alu.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L/alu.v
+L0 2
+Z5 OL;L;10.1c;51
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L/alu.v|
+Z6 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s108 1492830323.908000
+!s107 ctrl_encode_def.v|//Mac/Home/Desktop/ComputerOrganization/MIPS_L/alu.v|
+!i10b 1
+!s85 0
+vctrl
+V__KAa0W[RKo1UQMjObMWN2
+r1
+31
+I]3`e@T]kcDoD@BMNF9PWa3
+R4
+w1492829647
+8\\Mac\Home\Desktop\ComputerOrganization\MIPS_L\ctrl.v
+F\\Mac\Home\Desktop\ComputerOrganization\MIPS_L\ctrl.v
+L0 3
+R5
+R6
+!s100 FF1Aa6FREcN91[PS<L?hm3
+!s90 -reportprogress|300|-work|work|-vopt|\\Mac\Home\Desktop\ComputerOrganization\MIPS_L\ctrl.v|
+!s108 1492829820.405000
+!s107 instruction_def.v|ctrl_encode_def.v|\\Mac\Home\Desktop\ComputerOrganization\MIPS_L\ctrl.v|
+!s85 0
+!i10b 1
+vdm_4k
+!s100 V4=DQI^?P0@oo;bjMCQ712
+IFJ::_hCMAJ0J22^X7;?>>1
+VbI3zNHma;]]mKAg4:6LVj2
+R4
+w1492773857
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L/dm.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L/dm.v
+L0 1
+R5
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L/dm.v|
+R6
+!s108 1492830324.252000
+!s107 //Mac/Home/Desktop/ComputerOrganization/MIPS_L/dm.v|
+!i10b 1
+!s85 0
+vEXT
+!s100 H1QOC2Q>_^kb]TSJm8U7h1
+I<a=bW_58]`m`G_BPEc@do3
+VkP?W4T^9d29_a?HHBFR]61
+R4
+Z7 w1492672268
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L/EXT.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L/EXT.v
+L0 2
+R5
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L/EXT.v|
+R6
+n@e@x@t
+!s108 1492830324.377000
+!s107 ctrl_encode_def.v|//Mac/Home/Desktop/ComputerOrganization/MIPS_L/EXT.v|
+!i10b 1
+!s85 0
+vflopr
+!s100 :ke@f2D2ZJ28WE9=^BiBN1
+I8ZR:BzmRgK@bU8kj_[SO^1
+V]P_f@>=6G=?GDdBCzB=NS3
+R4
+R7
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L/flopr.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L/flopr.v
+L0 1
+R5
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L/flopr.v|
+R6
+!s108 1492830324.518000
+!s107 //Mac/Home/Desktop/ComputerOrganization/MIPS_L/flopr.v|
+!i10b 1
+!s85 0
+vim_4k
+!s100 hf2dlm?RS4^6PbdzH>`bi0
+I]GR]ZF:f=eXcK9flUU0W91
+VNT5U=;48`X5XLP8Af1l[f2
+R4
+w1492672270
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L/im.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L/im.v
+L0 1
+R5
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L/im.v|
+R6
+!s108 1492830324.721000
+!s107 //Mac/Home/Desktop/ComputerOrganization/MIPS_L/im.v|
+!i10b 1
+!s85 0
+vIR
+!s100 6g5<zQj@jR[nZZoTCP:@e1
+Il;Rhe<KleLSzVQ4Q0=WUY1
+VdoiokPZdC@Pj=oAcaieao3
+R4
+w1492672272
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L/IR.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L/IR.v
+L0 1
+R5
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L/IR.v|
+R6
+n@i@r
+!s108 1492830324.939000
+!s107 //Mac/Home/Desktop/ComputerOrganization/MIPS_L/IR.v|
+!i10b 1
+!s85 0
+vMemExtender
+!s100 hjlaiPz5IX4a?e=NaDI_L1
+IVlBUj50o0fQ=WI]A^7AmZ3
+VUE^?mUh91h8UO0zIeVnej2
+R4
+w1492774696
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L/MemExtender.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L/MemExtender.v
+L0 2
+R5
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L/MemExtender.v|
+R6
+n@mem@extender
+!s108 1492830325.080000
+!s107 ctrl_encode_def.v|//Mac/Home/Desktop/ComputerOrganization/MIPS_L/MemExtender.v|
+!i10b 1
+!s85 0
+vmips
+V^lO[ZOI0I1e8M8GJjI9B:3
+r1
+31
+I0FNGZGcl:Ch?L04OooZhO3
+R4
+w1492829386
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L/mips.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L/mips.v
+L0 1
+R5
+R6
+!s100 :<fW`oL3807jj_1zI`ClX3
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L/mips.v|
+!s108 1492829823.172000
+!s107 //Mac/Home/Desktop/ComputerOrganization/MIPS_L/mips.v|
+!s85 0
+!i10b 1
+vmips_tb
+!s100 j18Xjo^DkGVEAnzf6E`2@3
+IVeR3flPDG;0>Xz<@nZ;UR3
+VHfL@J;=TiSmbe>@j83EoJ0
+R4
+Z8 w1492672346
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L/mips_tb.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L/mips_tb.v
+L0 1
+R5
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L/mips_tb.v|
+R6
+!s108 1492830325.393000
+!s107 //Mac/Home/Desktop/ComputerOrganization/MIPS_L/mips_tb.v|
+!i10b 1
+!s85 0
+vmux16
+!s100 dQ5X5K^[iKh2XTi2HlhJG2
+I75@zk=WWmBFiTYN_iIB5T2
+V`6=HBldE>cXC;m]K0;QI>0
+R4
+R8
+Z9 8//Mac/Home/Desktop/ComputerOrganization/MIPS_L/mux.v
+Z10 F//Mac/Home/Desktop/ComputerOrganization/MIPS_L/mux.v
+L0 71
+R5
+r1
+31
+Z11 !s108 1492830325.518000
+Z12 !s107 //Mac/Home/Desktop/ComputerOrganization/MIPS_L/mux.v|
+Z13 !s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L/mux.v|
+R6
+!i10b 1
+!s85 0
+vmux2
+!s100 ]_8CcORASe<6<iX>Zf9QZ2
+I]b<3=XjBWVKjWocYYKa5;0
+VT8RWJBjAIeM]>7U=5kBkT1
+R4
+R8
+R9
+R10
+L0 2
+R5
+r1
+31
+R11
+R12
+R13
+R6
+!i10b 1
+!s85 0
+vmux4
+!s100 ?zc97U0MEAIzIeK@nAO9C0
+IZ[O_MKjZ>h[J;EMa0[G`82
+V@m74j;^3XFJ7>OzQXh6V`0
+R4
+R8
+R9
+R10
+L0 15
+R5
+r1
+31
+R11
+R12
+R13
+R6
+!i10b 1
+!s85 0
+vmux8
+!s100 H28UO77hS;OeQm5RAF0KE3
+IEh@`;V<VRCC@1aF2N<a`00
+VOh>X<_n?620Z_^H7^I9KH2
+R4
+R8
+R9
+R10
+L0 40
+R5
+r1
+31
+R11
+R12
+R13
+R6
+!i10b 1
+!s85 0
+vNPC
+!s100 4^AH_NNFKeDAikYRM]cJ@2
+IKj_6aJfm5i<B]T^k;;O0U3
+VK?MfEI3TIMS18Q32XeWBS1
+R4
+Z14 w1492672348
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L/NPC.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L/NPC.v
+L0 2
+R5
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L/NPC.v|
+R6
+n@n@p@c
+!s108 1492830325.736000
+!s107 ctrl_encode_def.v|//Mac/Home/Desktop/ComputerOrganization/MIPS_L/NPC.v|
+!i10b 1
+!s85 0
+vPC
+!s100 2URnfh^`Yz9V=4:7Hc4o51
+IgT67g:9;4zfz<j8Z@38R90
+VH:WWEmEz7L`;6@3TmMz>W3
+R4
+R14
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L/PC.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L/PC.v
+L0 1
+R5
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L/PC.v|
+R6
+n@p@c
+!s108 1492830325.862000
+!s107 //Mac/Home/Desktop/ComputerOrganization/MIPS_L/PC.v|
+!i10b 1
+!s85 0
+vRF
+!s100 _8?l<BeJzBK<@F>LoEmI[0
+IT5>@H85eMIAg>PBZTc0Gc2
+V>m8H_>Z_GWe1OmYLG6niP1
+R4
+R14
+8//Mac/Home/Desktop/ComputerOrganization/MIPS_L/RF.v
+F//Mac/Home/Desktop/ComputerOrganization/MIPS_L/RF.v
+L0 2
+R5
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|//Mac/Home/Desktop/ComputerOrganization/MIPS_L/RF.v|
+R6
+n@r@f
+!i10b 1
+!s85 0
+!s108 1492830325.987000
+!s107 global_def.v|//Mac/Home/Desktop/ComputerOrganization/MIPS_L/RF.v|

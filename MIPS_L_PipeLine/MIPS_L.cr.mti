@@ -1,0 +1,107 @@
+//Mac/Home/Desktop/ComputerOrganization/MIPS_L/global_def.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L/global_def.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L/ctrl_encode_def.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L/ctrl_encode_def.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L/RF.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L/RF.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module RF
+
+Top level modules:
+	RF
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L/instruction_def.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L/instruction_def.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L/EXT.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L/EXT.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module EXT
+
+Top level modules:
+	EXT
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L/alu.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L/alu.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L/mux.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L/mux.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module mux2
+-- Compiling module mux4
+-- Compiling module mux8
+-- Compiling module mux16
+
+Top level modules:
+	mux2
+	mux4
+	mux8
+	mux16
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L/flopr.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L/flopr.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module flopr
+
+Top level modules:
+	flopr
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L/ctrl.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L/ctrl.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module ctrl
+
+Top level modules:
+	ctrl
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L/MemExtender.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L/MemExtender.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module MemExtender
+
+Top level modules:
+	MemExtender
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L/im.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L/im.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module im_4k
+
+Top level modules:
+	im_4k
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L/dm.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L/dm.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module dm_4k
+
+Top level modules:
+	dm_4k
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L/mips.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L/mips.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module mips
+
+Top level modules:
+	mips
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L/PC.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L/PC.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L/IR.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L/IR.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module IR
+
+Top level modules:
+	IR
+
+} {} {}} //Mac/Home/Desktop/ComputerOrganization/MIPS_L/mips_tb.v {1 {vlog -work work -vopt //Mac/Home/Desktop/ComputerOrganization/MIPS_L/mips_tb.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module mips_tb
+
+Top level modules:
+	mips_tb
+
+} {} {}}
