@@ -1,2 +1,2 @@
-# ComputerOrganization-MIPS_Pipeline
-This is a 5-level pipelined MIPS CPU.
+# ComputerOrganization-MIPS
+This is a Computer Organization and Design course project including MultiCycle MIPS CPU and 5-level pipelined MIPS CPU.
