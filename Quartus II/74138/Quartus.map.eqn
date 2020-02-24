@@ -1,0 +1,123 @@
+-- Copyright (C) 1991-2005 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+--B1L1 is 74138:inst|1~14
+B1L1 = input_5 # input_6 # !input_4;
+
+
+--B1_15 is 74138:inst|15
+B1_15 = !input_1 & !B1L1 & !input_3 & !input_2;
+
+
+--B1_17 is 74138:inst|17
+B1_17 = input_2 & !input_1 & !B1L1 & !input_3;
+
+
+--B1_18 is 74138:inst|18
+B1_18 = input_1 & input_2 & !B1L1 & !input_3;
+
+
+--B1_19 is 74138:inst|19
+B1_19 = input_3 & !input_1 & !B1L1 & !input_2;
+
+
+--B1_20 is 74138:inst|20
+B1_20 = input_1 & input_3 & !B1L1 & !input_2;
+
+
+--B1_21 is 74138:inst|21
+B1_21 = input_3 & input_2 & !input_1 & !B1L1;
+
+
+--B1_22 is 74138:inst|22
+B1_22 = input_1 & input_3 & input_2 & !B1L1;
+
+
+--input_1 is input_1
+--operation mode is input
+
+input_1 = INPUT();
+
+
+--input_5 is input_5
+--operation mode is input
+
+input_5 = INPUT();
+
+
+--input_6 is input_6
+--operation mode is input
+
+input_6 = INPUT();
+
+
+--input_4 is input_4
+--operation mode is input
+
+input_4 = INPUT();
+
+
+--input_3 is input_3
+--operation mode is input
+
+input_3 = INPUT();
+
+
+--input_2 is input_2
+--operation mode is input
+
+input_2 = INPUT();
+
+
+--output_1 is output_1
+--operation mode is output
+
+output_1 = OUTPUT(!B1_15);
+
+
+--output_2 is output_2
+--operation mode is output
+
+output_2 = OUTPUT(!B1_17);
+
+
+--output_3 is output_3
+--operation mode is output
+
+output_3 = OUTPUT(!B1_18);
+
+
+--output_4 is output_4
+--operation mode is output
+
+output_4 = OUTPUT(!B1_19);
+
+
+--output_5 is output_5
+--operation mode is output
+
+output_5 = OUTPUT(!B1_20);
+
+
+--output_6 is output_6
+--operation mode is output
+
+output_6 = OUTPUT(!B1_21);
+
+
+--output_7 is output_7
+--operation mode is output
+
+output_7 = OUTPUT(!B1_22);
+
+

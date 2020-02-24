@@ -1,0 +1,50 @@
+-- Copyright (C) 1991-2005 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+--C1_b1 is or_gate:inst2|b1 at LCCOMB_X9_Y26_N16
+C1_b1 = C2 & (C1 # C3 & C4) # !C2 & C3 & C4;
+
+
+--C1 is C1 at PIN_223
+--operation mode is input
+
+C1 = INPUT();
+
+
+--C3 is C3 at PIN_228
+--operation mode is input
+
+C3 = INPUT();
+
+
+--C4 is C4 at PIN_230
+--operation mode is input
+
+C4 = INPUT();
+
+
+--C2 is C2 at PIN_226
+--operation mode is input
+
+C2 = INPUT();
+
+
+--D1 is D1 at PIN_38
+--operation mode is output
+
+D1 = OUTPUT(C1_b1);
+
+
+
+
+

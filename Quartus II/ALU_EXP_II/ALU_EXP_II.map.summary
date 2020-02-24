@@ -1,0 +1,12 @@
+Analysis & Synthesis Status : Successful - Mon Nov 14 18:39:43 2016
+Quartus II Version : 5.1 Build 176 10/26/2005 SJ Full Version
+Revision Name : ALU_EXP_II
+Top-level Entity Name : ALU_EXP_II
+Family : Cyclone II
+Total combinational functions : 226
+Total registers : 64
+Total pins : 83
+Total virtual pins : 0
+Total memory bits : 256
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

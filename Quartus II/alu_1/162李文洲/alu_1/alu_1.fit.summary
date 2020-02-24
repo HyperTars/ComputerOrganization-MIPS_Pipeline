@@ -1,0 +1,14 @@
+Fitter Status : Successful - Mon Nov 07 20:12:35 2016
+Quartus II Version : 5.1 Build 176 10/26/2005 SJ Full Version
+Revision Name : alu_1
+Top-level Entity Name : alu_1
+Family : Cyclone II
+Device : EP2C20Q240C8
+Timing Models : Preliminary
+Total logic elements : 158 / 18,752 ( < 1 % )
+Total registers : 16
+Total pins : 63 / 142 ( 44 % )
+Total virtual pins : 0
+Total memory bits : 256 / 239,616 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 52 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

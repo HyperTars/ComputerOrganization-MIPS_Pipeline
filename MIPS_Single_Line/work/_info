@@ -1,0 +1,317 @@
+m255
+K3
+13
+cModel Technology
+dC:\modeltech64_10.1c\examples
+valu
+V8zAZJaVNTFSVRLe<PJ::H3
+r1
+31
+I`e8ZFAOh3hT:^3=@jO[ZI3
+Z0 dF:\ComputerDesign\2017\Line
+w1492776436
+8F:/ComputerDesign/2017/Line/alu.v
+FF:/ComputerDesign/2017/Line/alu.v
+L0 2
+Z1 OL;L;10.1c;51
+Z2 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s85 0
+!s100 U9MCQoT<ji9aQ9NHnS]UV1
+!s108 1493090057.125000
+!s107 ctrl_encode_def.v|F:/ComputerDesign/2017/Line/alu.v|
+!s90 -reportprogress|300|-work|work|-vopt|F:/ComputerDesign/2017/Line/alu.v|
+!i10b 1
+vctrl
+V]?m[UJ]2:z;C4[g<[0T;U2
+r1
+31
+IOkH>G>F:AM7[KiSn8McE=1
+Z3 dF:\ComputerDesign\2017\Line
+w1492853006
+8F:/ComputerDesign/2017/Line/ctrl.v
+FF:/ComputerDesign/2017/Line/ctrl.v
+L0 3
+R1
+R2
+!s85 0
+!s100 :Ij0P3:G=?L7WAccBLm4W3
+!s108 1493090057.371000
+!s107 instruction_def.v|ctrl_encode_def.v|F:/ComputerDesign/2017/Line/ctrl.v|
+!s90 -reportprogress|300|-work|work|-vopt|F:/ComputerDesign/2017/Line/ctrl.v|
+!i10b 1
+vdm_4k
+VbI3zNHma;]]mKAg4:6LVj2
+r1
+!s85 0
+31
+I:V2;J1N<[9RSenFAXAMJ`2
+R3
+w1492773856
+8F:/ComputerDesign/2017/Line/dm.v
+FF:/ComputerDesign/2017/Line/dm.v
+L0 1
+R1
+R2
+!s100 czXg^Hc4gD;aW=[XCZYAF3
+!s108 1493090057.665000
+!s107 F:/ComputerDesign/2017/Line/dm.v|
+!s90 -reportprogress|300|-work|work|-vopt|F:/ComputerDesign/2017/Line/dm.v|
+!i10b 1
+vEXT
+VkP?W4T^9d29_a?HHBFR]61
+r1
+31
+IjM`CR20=Uk^;iIHNO`lTc3
+R3
+Z4 w1492672268
+8F:/ComputerDesign/2017/Line/EXT.v
+FF:/ComputerDesign/2017/Line/EXT.v
+L0 2
+R1
+R2
+n@e@x@t
+!s85 0
+!s100 @zF7bV_P[[ni=T3fPneD[1
+!s108 1493090058.126000
+!s107 ctrl_encode_def.v|F:/ComputerDesign/2017/Line/EXT.v|
+!s90 -reportprogress|300|-work|work|-vopt|F:/ComputerDesign/2017/Line/EXT.v|
+!i10b 1
+vflopr
+V]P_f@>=6G=?GDdBCzB=NS3
+r1
+31
+ImBMcjo:6DRmTe`i@319Jf0
+R3
+R4
+8F:/ComputerDesign/2017/Line/flopr.v
+FF:/ComputerDesign/2017/Line/flopr.v
+L0 1
+R1
+R2
+!s85 0
+!s100 d`;JRR7^IjVT5ccY7c^aL2
+!s108 1493090058.424000
+!s107 F:/ComputerDesign/2017/Line/flopr.v|
+!s90 -reportprogress|300|-work|work|-vopt|F:/ComputerDesign/2017/Line/flopr.v|
+!i10b 1
+vim_4k
+VNT5U=;48`X5XLP8Af1l[f2
+r1
+31
+IEhJXV_me1L[a:_cRzHfN02
+R3
+w1492672270
+8F:/ComputerDesign/2017/Line/im.v
+FF:/ComputerDesign/2017/Line/im.v
+L0 1
+R1
+R2
+!s85 0
+!s100 akUKjRdQAB^UC_8=n`OiN2
+!s108 1493090058.755000
+!s107 F:/ComputerDesign/2017/Line/im.v|
+!s90 -reportprogress|300|-work|work|-vopt|F:/ComputerDesign/2017/Line/im.v|
+!i10b 1
+vIR
+VdoiokPZdC@Pj=oAcaieao3
+r1
+31
+IORF36Qmb_<mn;k0XE3KYZ0
+R3
+w1492672272
+8F:/ComputerDesign/2017/Line/IR.v
+FF:/ComputerDesign/2017/Line/IR.v
+L0 1
+R1
+R2
+n@i@r
+!s85 0
+!s100 kLPUJnYGI>nA@F9OY2S3j0
+!s108 1493090059.086000
+!s107 F:/ComputerDesign/2017/Line/IR.v|
+!s90 -reportprogress|300|-work|work|-vopt|F:/ComputerDesign/2017/Line/IR.v|
+!i10b 1
+vMemExtender
+II]ch3Qf6ajRUMlE:7CoP>1
+VUE^?mUh91h8UO0zIeVnej2
+R3
+w1492774696
+8F:/ComputerDesign/2017/Line/MemExtender.v
+FF:/ComputerDesign/2017/Line/MemExtender.v
+L0 2
+R1
+r1
+31
+R2
+n@mem@extender
+!s100 aA8mbTRW_EMOIBbhklQ?;1
+!s108 1493090059.535000
+!s107 ctrl_encode_def.v|F:/ComputerDesign/2017/Line/MemExtender.v|
+!s90 -reportprogress|300|-work|work|-vopt|F:/ComputerDesign/2017/Line/MemExtender.v|
+!i10b 1
+!s85 0
+vmips
+V^lO[ZOI0I1e8M8GJjI9B:3
+r1
+31
+IjG<<I@S><7=YARgQAbD@Q1
+R3
+w1492853994
+8F:/ComputerDesign/2017/Line/mips.v
+FF:/ComputerDesign/2017/Line/mips.v
+L0 1
+R1
+R2
+!s85 0
+!s100 5[Xa;2J3S<AeeaO6Z]=GF2
+!s108 1493090059.732000
+!s107 F:/ComputerDesign/2017/Line/mips.v|
+!s90 -reportprogress|300|-work|work|-vopt|F:/ComputerDesign/2017/Line/mips.v|
+!i10b 1
+vmips_tb
+VHfL@J;=TiSmbe>@j83EoJ0
+r1
+31
+IfdKNTQK:1MTQ1Jk24AoX50
+R3
+Z5 w1492672346
+8F:/ComputerDesign/2017/Line/mips_tb.v
+FF:/ComputerDesign/2017/Line/mips_tb.v
+L0 1
+R1
+R2
+!s85 0
+!s100 1fQfYjNAQiUdhB4MMMC9R1
+!s108 1493090059.945000
+!s107 F:/ComputerDesign/2017/Line/mips_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|F:/ComputerDesign/2017/Line/mips_tb.v|
+!i10b 1
+vmux16
+I=h8:FQCIb1G4g]QnZOJG;0
+V`6=HBldE>cXC;m]K0;QI>0
+R3
+R5
+Z6 8F:/ComputerDesign/2017/Line/mux.v
+Z7 FF:/ComputerDesign/2017/Line/mux.v
+L0 71
+R1
+r1
+31
+Z8 !s108 1493090060.242000
+Z9 !s107 F:/ComputerDesign/2017/Line/mux.v|
+Z10 !s90 -reportprogress|300|-work|work|-vopt|F:/ComputerDesign/2017/Line/mux.v|
+R2
+!s100 EP2ARN:H0U=`=@3G7FLVI0
+!i10b 1
+!s85 0
+vmux2
+VT8RWJBjAIeM]>7U=5kBkT1
+r1
+31
+I_jIXc9T6@4@M?XXXVHYKT1
+R3
+R5
+R6
+R7
+L0 2
+R1
+R8
+R9
+R10
+R2
+!s85 0
+!s100 objM3bXh2Hck3BWPfE@8I2
+!i10b 1
+vmux4
+V@m74j;^3XFJ7>OzQXh6V`0
+r1
+31
+I7Zj8O0@3YGD0;hReUDz]Q3
+R3
+R5
+R6
+R7
+L0 15
+R1
+R8
+R9
+R10
+R2
+!s85 0
+!s100 kh=Df<:INV=BneT:=J[GA0
+!i10b 1
+vmux8
+IObdFVX8GfX9`MiW5;6Pf93
+VOh>X<_n?620Z_^H7^I9KH2
+R3
+R5
+R6
+R7
+L0 40
+R1
+r1
+31
+R8
+R9
+R10
+R2
+!s100 B1;PUA8QnUjmn>f?76KPN3
+!i10b 1
+!s85 0
+vNPC
+VVVL6NNR<Y@6AUCZ<6ZhKF3
+r1
+31
+IC3L[OA^JKQ;gZo9k`>ge`2
+R3
+w1492855566
+8F:/ComputerDesign/2017/Line/NPC.v
+FF:/ComputerDesign/2017/Line/NPC.v
+L0 2
+R1
+R2
+n@n@p@c
+!s85 0
+!s100 154fU@mlhKCTBZ4aidGkd0
+!s108 1493090060.922000
+!s107 ctrl_encode_def.v|F:/ComputerDesign/2017/Line/NPC.v|
+!s90 -reportprogress|300|-work|work|-vopt|F:/ComputerDesign/2017/Line/NPC.v|
+!i10b 1
+vPC
+VH:WWEmEz7L`;6@3TmMz>W3
+r1
+31
+ICD2FT<mfNYY_S]lc6;_@Z1
+R3
+Z11 w1492672348
+8F:/ComputerDesign/2017/Line/PC.v
+FF:/ComputerDesign/2017/Line/PC.v
+L0 1
+R1
+R2
+n@p@c
+!s85 0
+!s100 INk_[@5N3@Ne>3>IkXJX^0
+!s108 1493090061.153000
+!s107 F:/ComputerDesign/2017/Line/PC.v|
+!s90 -reportprogress|300|-work|work|-vopt|F:/ComputerDesign/2017/Line/PC.v|
+!i10b 1
+vRF
+V>m8H_>Z_GWe1OmYLG6niP1
+r1
+31
+IX>SbN0j9>39KJU?01TXTa2
+R3
+R11
+8F:/ComputerDesign/2017/Line/RF.v
+FF:/ComputerDesign/2017/Line/RF.v
+L0 2
+R1
+R2
+n@r@f
+!s85 0
+!i10b 1
+!s100 GSZ:ODcgJe]WUi:`nDm2`1
+!s108 1493090061.426000
+!s107 global_def.v|F:/ComputerDesign/2017/Line/RF.v|
+!s90 -reportprogress|300|-work|work|-vopt|F:/ComputerDesign/2017/Line/RF.v|

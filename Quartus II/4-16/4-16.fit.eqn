@@ -1,0 +1,200 @@
+-- Copyright (C) 1991-2005 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+--B1L1 is 74138:inst|15~48 at LCCOMB_X1_Y9_N0
+B1L1 = !D2 & !D1 & !D3 & !D0;
+
+
+--B1L2 is 74138:inst|15~49 at LCCOMB_X1_Y9_N20
+B1L2 = D2 & D1 & !D3 & D0;
+
+
+--B1L3 is 74138:inst|15~50 at LCCOMB_X1_Y9_N8
+B1L3 = !D2 & !D1 & D3 & !D0;
+
+
+--B1L4 is 74138:inst|15~51 at LCCOMB_X1_Y9_N30
+B1L4 = D2 & D1 & D3 & D0;
+
+
+--B1L5 is 74138:inst|15~52 at LCCOMB_X1_Y9_N6
+B1L5 = !D2 & !D1 & !D3 & D0;
+
+
+--B1L6 is 74138:inst|15~53 at LCCOMB_X1_Y9_N22
+B1L6 = !D2 & D1 & !D3 & !D0;
+
+
+--B1L7 is 74138:inst|15~54 at LCCOMB_X1_Y9_N24
+B1L7 = !D2 & D1 & !D3 & D0;
+
+
+--B1L8 is 74138:inst|15~55 at LCCOMB_X1_Y9_N10
+B1L8 = D2 & !D1 & !D3 & !D0;
+
+
+--B1L9 is 74138:inst|15~56 at LCCOMB_X1_Y9_N4
+B1L9 = D2 & !D1 & !D3 & D0;
+
+
+--B1L10 is 74138:inst|15~57 at LCCOMB_X1_Y9_N16
+B1L10 = D2 & D1 & !D3 & !D0;
+
+
+--B1L11 is 74138:inst|15~58 at LCCOMB_X1_Y9_N12
+B1L11 = !D2 & !D1 & D3 & D0;
+
+
+--B1L12 is 74138:inst|15~59 at LCCOMB_X1_Y9_N28
+B1L12 = !D2 & D1 & D3 & !D0;
+
+
+--B1L13 is 74138:inst|15~60 at LCCOMB_X1_Y9_N2
+B1L13 = !D2 & D1 & D3 & D0;
+
+
+--B1L14 is 74138:inst|15~61 at LCCOMB_X1_Y9_N18
+B1L14 = D2 & !D1 & D3 & !D0;
+
+
+--B1L15 is 74138:inst|15~62 at LCCOMB_X1_Y9_N26
+B1L15 = D2 & !D1 & D3 & D0;
+
+
+--B1L16 is 74138:inst|15~63 at LCCOMB_X1_Y9_N14
+B1L16 = D2 & D1 & D3 & !D0;
+
+
+--D3 is D3 at PIN_230
+--operation mode is input
+
+D3 = INPUT();
+
+
+--D2 is D2 at PIN_228
+--operation mode is input
+
+D2 = INPUT();
+
+
+--D1 is D1 at PIN_226
+--operation mode is input
+
+D1 = INPUT();
+
+
+--D0 is D0 at PIN_223
+--operation mode is input
+
+D0 = INPUT();
+
+
+--Y0 is Y0 at PIN_37
+--operation mode is output
+
+Y0 = OUTPUT(!B1L1);
+
+
+--Y7 is Y7 at PIN_47
+--operation mode is output
+
+Y7 = OUTPUT(!B1L2);
+
+
+--Y8 is Y8 at PIN_49
+--operation mode is output
+
+Y8 = OUTPUT(!B1L3);
+
+
+--Y15 is Y15 at PIN_57
+--operation mode is output
+
+Y15 = OUTPUT(!B1L4);
+
+
+--Y1 is Y1 at PIN_38
+--operation mode is output
+
+Y1 = OUTPUT(!B1L5);
+
+
+--Y2 is Y2 at PIN_39
+--operation mode is output
+
+Y2 = OUTPUT(!B1L6);
+
+
+--Y3 is Y3 at PIN_41
+--operation mode is output
+
+Y3 = OUTPUT(!B1L7);
+
+
+--Y4 is Y4 at PIN_42
+--operation mode is output
+
+Y4 = OUTPUT(!B1L8);
+
+
+--Y5 is Y5 at PIN_44
+--operation mode is output
+
+Y5 = OUTPUT(!B1L9);
+
+
+--Y6 is Y6 at PIN_46
+--operation mode is output
+
+Y6 = OUTPUT(!B1L10);
+
+
+--Y9 is Y9 at PIN_50
+--operation mode is output
+
+Y9 = OUTPUT(!B1L11);
+
+
+--Y10 is Y10 at PIN_51
+--operation mode is output
+
+Y10 = OUTPUT(!B1L12);
+
+
+--Y11 is Y11 at PIN_52
+--operation mode is output
+
+Y11 = OUTPUT(!B1L13);
+
+
+--Y12 is Y12 at PIN_54
+--operation mode is output
+
+Y12 = OUTPUT(!B1L14);
+
+
+--Y13 is Y13 at PIN_55
+--operation mode is output
+
+Y13 = OUTPUT(!B1L15);
+
+
+--Y14 is Y14 at PIN_56
+--operation mode is output
+
+Y14 = OUTPUT(!B1L16);
+
+
+
+
+

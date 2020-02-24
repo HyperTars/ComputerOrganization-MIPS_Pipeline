@@ -1,0 +1,12 @@
+Analysis & Synthesis Status : Successful - Mon Oct 24 20:35:57 2016
+Quartus II Version : 5.1 Build 176 10/26/2005 SJ Full Version
+Revision Name : ROM_RAM
+Top-level Entity Name : ROM_RAM
+Family : Cyclone II
+Total combinational functions : 0
+Total registers : 0
+Total pins : 33
+Total virtual pins : 0
+Total memory bits : 576
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

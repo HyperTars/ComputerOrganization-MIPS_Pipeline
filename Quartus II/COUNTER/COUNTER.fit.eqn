@@ -1,0 +1,78 @@
+-- Copyright (C) 1991-2005 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+--next_counter[0] is next_counter[0] at LCFF_X1_Y12_N11
+next_counter[0] = DFFEAS(A1L9, GLOBAL(A1L2), GLOBAL(A1L15),  ,  ,  ,  ,  ,  );
+
+
+--next_counter[1] is next_counter[1] at LCFF_X1_Y12_N7
+next_counter[1] = DFFEAS(A1L11, GLOBAL(A1L2), GLOBAL(A1L15),  ,  ,  ,  ,  ,  );
+
+
+--next_counter[2] is next_counter[2] at LCFF_X1_Y12_N1
+next_counter[2] = DFFEAS(A1L13, GLOBAL(A1L2), GLOBAL(A1L15),  ,  ,  ,  ,  ,  );
+
+
+--A1L9 is next_counter[0]~6 at LCCOMB_X1_Y12_N10
+A1L9 = !next_counter[2];
+
+
+--clk is clk at PIN_31
+--operation mode is input
+
+clk = INPUT();
+
+
+--rs is rs at PIN_91
+--operation mode is input
+
+rs = INPUT();
+
+
+--count_out[0] is count_out[0] at PIN_41
+--operation mode is output
+
+count_out[0] = OUTPUT(next_counter[0]);
+
+
+--count_out[1] is count_out[1] at PIN_39
+--operation mode is output
+
+count_out[1] = OUTPUT(next_counter[1]);
+
+
+--count_out[2] is count_out[2] at PIN_38
+--operation mode is output
+
+count_out[2] = OUTPUT(next_counter[2]);
+
+
+
+
+
+--A1L2 is clk~clkctrl at CLKCTRL_G2
+A1L2 = cycloneii_clkctrl(.INCLK[0] = clk) WITH (clock_type = "Global Clock");
+
+
+--A1L15 is rs~clkctrl at CLKCTRL_G15
+A1L15 = cycloneii_clkctrl(.INCLK[0] = rs) WITH (clock_type = "Global Clock");
+
+
+--A1L11 is next_counter[1]~feeder at LCCOMB_X1_Y12_N6
+A1L11 = next_counter[0];
+
+
+--A1L13 is next_counter[2]~feeder at LCCOMB_X1_Y12_N0
+A1L13 = next_counter[1];
+
+

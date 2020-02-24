@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Controller">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Controller|RAM:inst22|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_o4k1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Controller|lpm_rom0:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_2i01.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

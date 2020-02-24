@@ -1,0 +1,12 @@
+Analysis & Synthesis Status : Successful - Mon Oct 17 19:42:35 2016
+Quartus II Version : 5.1 Build 176 10/26/2005 SJ Full Version
+Revision Name : COUNTER
+Top-level Entity Name : COUNTER
+Family : Cyclone II
+Total combinational functions : 1
+Total registers : 3
+Total pins : 5
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

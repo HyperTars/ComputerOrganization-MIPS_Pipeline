@@ -1,0 +1,14 @@
+Fitter Status : Successful - Mon Oct 17 19:42:37 2016
+Quartus II Version : 5.1 Build 176 10/26/2005 SJ Full Version
+Revision Name : COUNTER
+Top-level Entity Name : COUNTER
+Family : Cyclone II
+Device : EP2C20Q240C8
+Timing Models : Preliminary
+Total logic elements : 3 / 18,752 ( < 1 % )
+Total registers : 3
+Total pins : 5 / 142 ( 4 % )
+Total virtual pins : 0
+Total memory bits : 0 / 239,616 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 52 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

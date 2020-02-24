@@ -1,0 +1,82 @@
+Version 5.1 Build 176 10/26/2005 SJ Full Version
+10
+748
+OFF
+OFF
+OFF
+OFF
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+# entity
+or_gate
+# storage
+db|work2.(1).cnf
+db|work2.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+or_gate.vhd
+b2df214c51aed45885199765bb79cc5
+4
+# internal_option {
+ADD_PASS_THROUGH_LOGIC_TO_INFERRED_RAMS
+ON
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+or_gate:inst2
+}
+# end
+# entity
+and_gate
+# storage
+db|work2.(2).cnf
+db|work2.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+and_gate.vhd
+cb2aa7761e3b8d7b51bdec63e02958
+4
+# internal_option {
+ADD_PASS_THROUGH_LOGIC_TO_INFERRED_RAMS
+ON
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+and_gate:inst
+and_gate:inst1
+}
+# end
+# entity
+work2
+# storage
+db|work2.(0).cnf
+db|work2.(0).cnf
+# case_insensitive
+# source_file
+work2.bdf
+602ebc5891a911db44d33e7f16018b5
+23
+# hierarchies {
+|
+}
+# end
+# complete
+

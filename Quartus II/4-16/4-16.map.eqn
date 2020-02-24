@@ -1,0 +1,197 @@
+-- Copyright (C) 1991-2005 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+--B1L1 is 74138:inst|15~48
+B1L1 = !D3 & !D2 & !D1 & !D0;
+
+
+--B1L2 is 74138:inst|15~49
+B1L2 = !D3 & D2 & D1 & D0;
+
+
+--B1L3 is 74138:inst|15~50
+B1L3 = D3 & !D2 & !D1 & !D0;
+
+
+--B1L4 is 74138:inst|15~51
+B1L4 = D3 & D2 & D1 & D0;
+
+
+--B1L5 is 74138:inst|15~52
+B1L5 = !D3 & !D2 & !D1 & D0;
+
+
+--B1L6 is 74138:inst|15~53
+B1L6 = !D3 & !D2 & D1 & !D0;
+
+
+--B1L7 is 74138:inst|15~54
+B1L7 = !D3 & !D2 & D1 & D0;
+
+
+--B1L8 is 74138:inst|15~55
+B1L8 = !D3 & D2 & !D1 & !D0;
+
+
+--B1L9 is 74138:inst|15~56
+B1L9 = !D3 & D2 & !D1 & D0;
+
+
+--B1L10 is 74138:inst|15~57
+B1L10 = !D3 & D2 & D1 & !D0;
+
+
+--B1L11 is 74138:inst|15~58
+B1L11 = D3 & !D2 & !D1 & D0;
+
+
+--B1L12 is 74138:inst|15~59
+B1L12 = D3 & !D2 & D1 & !D0;
+
+
+--B1L13 is 74138:inst|15~60
+B1L13 = D3 & !D2 & D1 & D0;
+
+
+--B1L14 is 74138:inst|15~61
+B1L14 = D3 & D2 & !D1 & !D0;
+
+
+--B1L15 is 74138:inst|15~62
+B1L15 = D3 & D2 & !D1 & D0;
+
+
+--B1L16 is 74138:inst|15~63
+B1L16 = D3 & D2 & D1 & !D0;
+
+
+--D3 is D3
+--operation mode is input
+
+D3 = INPUT();
+
+
+--D2 is D2
+--operation mode is input
+
+D2 = INPUT();
+
+
+--D1 is D1
+--operation mode is input
+
+D1 = INPUT();
+
+
+--D0 is D0
+--operation mode is input
+
+D0 = INPUT();
+
+
+--Y0 is Y0
+--operation mode is output
+
+Y0 = OUTPUT(!B1L1);
+
+
+--Y7 is Y7
+--operation mode is output
+
+Y7 = OUTPUT(!B1L2);
+
+
+--Y8 is Y8
+--operation mode is output
+
+Y8 = OUTPUT(!B1L3);
+
+
+--Y15 is Y15
+--operation mode is output
+
+Y15 = OUTPUT(!B1L4);
+
+
+--Y1 is Y1
+--operation mode is output
+
+Y1 = OUTPUT(!B1L5);
+
+
+--Y2 is Y2
+--operation mode is output
+
+Y2 = OUTPUT(!B1L6);
+
+
+--Y3 is Y3
+--operation mode is output
+
+Y3 = OUTPUT(!B1L7);
+
+
+--Y4 is Y4
+--operation mode is output
+
+Y4 = OUTPUT(!B1L8);
+
+
+--Y5 is Y5
+--operation mode is output
+
+Y5 = OUTPUT(!B1L9);
+
+
+--Y6 is Y6
+--operation mode is output
+
+Y6 = OUTPUT(!B1L10);
+
+
+--Y9 is Y9
+--operation mode is output
+
+Y9 = OUTPUT(!B1L11);
+
+
+--Y10 is Y10
+--operation mode is output
+
+Y10 = OUTPUT(!B1L12);
+
+
+--Y11 is Y11
+--operation mode is output
+
+Y11 = OUTPUT(!B1L13);
+
+
+--Y12 is Y12
+--operation mode is output
+
+Y12 = OUTPUT(!B1L14);
+
+
+--Y13 is Y13
+--operation mode is output
+
+Y13 = OUTPUT(!B1L15);
+
+
+--Y14 is Y14
+--operation mode is output
+
+Y14 = OUTPUT(!B1L16);
+
+

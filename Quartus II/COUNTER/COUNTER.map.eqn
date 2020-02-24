@@ -1,0 +1,59 @@
+-- Copyright (C) 1991-2005 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+--next_counter[0] is next_counter[0]
+next_counter[0] = DFFEAS(A1L8, clk, rs,  ,  ,  ,  ,  ,  );
+
+
+--next_counter[1] is next_counter[1]
+next_counter[1] = DFFEAS(next_counter[0], clk, rs,  ,  ,  ,  ,  ,  );
+
+
+--next_counter[2] is next_counter[2]
+next_counter[2] = DFFEAS(next_counter[1], clk, rs,  ,  ,  ,  ,  ,  );
+
+
+--A1L8 is next_counter[0]~6
+A1L8 = !next_counter[2];
+
+
+--clk is clk
+--operation mode is input
+
+clk = INPUT();
+
+
+--rs is rs
+--operation mode is input
+
+rs = INPUT();
+
+
+--count_out[0] is count_out[0]
+--operation mode is output
+
+count_out[0] = OUTPUT(next_counter[0]);
+
+
+--count_out[1] is count_out[1]
+--operation mode is output
+
+count_out[1] = OUTPUT(next_counter[1]);
+
+
+--count_out[2] is count_out[2]
+--operation mode is output
+
+count_out[2] = OUTPUT(next_counter[2]);
+
+

@@ -1,0 +1,56 @@
+# Copyright (C) 1991-2005 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		ROM_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C20Q240C8
+set_global_assignment -name TOP_LEVEL_ENTITY ROM
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 5.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:03:23  OCTOBER 24, 2016"
+set_global_assignment -name LAST_QUARTUS_VERSION 5.1
+set_global_assignment -name BDF_FILE ROM.bdf
+set_global_assignment -name HEX_FILE ROM.hex
+set_location_assignment PIN_31 -to sw_clk
+set_location_assignment PIN_9 -to rom_add[5]
+set_location_assignment PIN_11 -to rom_add[4]
+set_location_assignment PIN_13 -to rom_add[3]
+set_location_assignment PIN_14 -to rom_add[2]
+set_location_assignment PIN_15 -to rom_add[1]
+set_location_assignment PIN_16 -to rom_add[0]
+set_location_assignment PIN_200 -to rom_out[15]
+set_location_assignment PIN_197 -to rom_out[14]
+set_location_assignment PIN_194 -to rom_out[13]
+set_location_assignment PIN_191 -to rom_out[12]
+set_location_assignment PIN_188 -to rom_out[11]
+set_location_assignment PIN_186 -to rom_out[10]
+set_location_assignment PIN_184 -to rom_out[9]
+set_location_assignment PIN_177 -to rom_out[8]
+set_location_assignment PIN_174 -to rom_out[7]
+set_location_assignment PIN_171 -to rom_out[6]
+set_location_assignment PIN_168 -to rom_out[5]
+set_location_assignment PIN_166 -to rom_out[4]
+set_location_assignment PIN_165 -to rom_out[3]
+set_location_assignment PIN_164 -to rom_out[2]
+set_location_assignment PIN_162 -to rom_out[1]
+set_location_assignment PIN_161 -to rom_out[0]

@@ -1,0 +1,98 @@
+# Copyright (C) 1991-2005 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		alu_1_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C20Q240C8
+set_global_assignment -name TOP_LEVEL_ENTITY alu_1
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 5.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:56:33  NOVEMBER 07, 2016"
+set_global_assignment -name LAST_QUARTUS_VERSION 5.1
+set_global_assignment -name VHDL_FILE reg.vhd
+set_global_assignment -name VHDL_FILE alu.vhd
+set_global_assignment -name BDF_FILE alu_1.bdf
+set_global_assignment -name HEX_FILE rom.hex
+set_location_assignment PIN_91 -to sw_rst
+set_location_assignment PIN_31 -to sw_clk
+set_location_assignment PIN_232 -to en
+set_location_assignment PIN_230 -to cin
+set_location_assignment PIN_223 -to alu_func[2]
+set_location_assignment PIN_226 -to alu_func[1]
+set_location_assignment PIN_228 -to alu_func[0]
+set_location_assignment PIN_38 -to alu_out[15]
+set_location_assignment PIN_39 -to alu_out[14]
+set_location_assignment PIN_41 -to alu_out[13]
+set_location_assignment PIN_42 -to alu_out[12]
+set_location_assignment PIN_44 -to alu_out[11]
+set_location_assignment PIN_46 -to alu_out[10]
+set_location_assignment PIN_47 -to alu_out[9]
+set_location_assignment PIN_49 -to alu_out[8]
+set_location_assignment PIN_50 -to alu_out[7]
+set_location_assignment PIN_51 -to alu_out[6]
+set_location_assignment PIN_52 -to alu_out[5]
+set_location_assignment PIN_54 -to alu_out[4]
+set_location_assignment PIN_55 -to alu_out[3]
+set_location_assignment PIN_56 -to alu_out[2]
+set_location_assignment PIN_57 -to alu_out[1]
+set_location_assignment PIN_111 -to c
+set_location_assignment PIN_113 -to z
+set_location_assignment PIN_114 -to v
+set_location_assignment PIN_116 -to s
+set_location_assignment PIN_200 -to rom_q[15]
+set_location_assignment PIN_197 -to rom_q[14]
+set_location_assignment PIN_194 -to rom_q[13]
+set_location_assignment PIN_191 -to rom_q[12]
+set_location_assignment PIN_188 -to rom_q[11]
+set_location_assignment PIN_186 -to rom_q[10]
+set_location_assignment PIN_184 -to rom_q[9]
+set_location_assignment PIN_177 -to rom_q[8]
+set_location_assignment PIN_174 -to rom_q[7]
+set_location_assignment PIN_171 -to rom_q[6]
+set_location_assignment PIN_168 -to rom_q[5]
+set_location_assignment PIN_166 -to rom_q[4]
+set_location_assignment PIN_165 -to rom_q[3]
+set_location_assignment PIN_164 -to rom_q[2]
+set_location_assignment PIN_162 -to rom_q[1]
+set_location_assignment PIN_161 -to rom_q[0]
+set_location_assignment PIN_189 -to ALU_B[15]
+set_location_assignment PIN_187 -to ALU_B[14]
+set_location_assignment PIN_185 -to ALU_B[13]
+set_location_assignment PIN_178 -to ALU_B[12]
+set_location_assignment PIN_175 -to ALU_B[11]
+set_location_assignment PIN_173 -to ALU_B[10]
+set_location_assignment PIN_170 -to ALU_B[9]
+set_location_assignment PIN_167 -to ALU_B[8]
+set_location_assignment PIN_159 -to ALU_B[7]
+set_location_assignment PIN_157 -to ALU_B[6]
+set_location_assignment PIN_156 -to ALU_B[5]
+set_location_assignment PIN_155 -to ALU_B[4]
+set_location_assignment PIN_150 -to ALU_B[3]
+set_location_assignment PIN_149 -to ALU_B[2]
+set_location_assignment PIN_141 -to ALU_B[1]
+set_location_assignment PIN_140 -to ALU_B[0]
+set_location_assignment PIN_15 -to rom_aa[3]
+set_location_assignment PIN_16 -to rom_aa[2]
+set_location_assignment PIN_18 -to rom_aa[1]
+set_location_assignment PIN_20 -to rom_aa[0]
+set_location_assignment PIN_58 -to alu_out[0]

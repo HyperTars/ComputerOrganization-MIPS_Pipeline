@@ -1,0 +1,14 @@
+Fitter Status : Successful - Mon Oct 24 19:14:10 2016
+Quartus II Version : 5.1 Build 176 10/26/2005 SJ Full Version
+Revision Name : ROM
+Top-level Entity Name : ROM
+Family : Cyclone II
+Device : EP2C20Q240C8
+Timing Models : Preliminary
+Total logic elements : 0 / 18,752 ( 0 % )
+Total registers : 0
+Total pins : 23 / 142 ( 16 % )
+Total virtual pins : 0
+Total memory bits : 1,024 / 239,616 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 52 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

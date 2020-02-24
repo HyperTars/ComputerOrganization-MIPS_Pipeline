@@ -1,0 +1,12 @@
+Analysis & Synthesis Status : Successful - Mon Nov 07 20:12:32 2016
+Quartus II Version : 5.1 Build 176 10/26/2005 SJ Full Version
+Revision Name : alu_1
+Top-level Entity Name : alu_1
+Family : Cyclone II
+Total combinational functions : 158
+Total registers : 16
+Total pins : 63
+Total virtual pins : 0
+Total memory bits : 256
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

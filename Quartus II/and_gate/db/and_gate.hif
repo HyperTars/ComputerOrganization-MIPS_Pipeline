@@ -1,0 +1,43 @@
+Version 5.1 Build 176 10/26/2005 SJ Full Version
+10
+748
+OFF
+OFF
+OFF
+OFF
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+# entity
+and_gate
+# storage
+db|and_gate.(0).cnf
+db|and_gate.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+and_gate.vhd
+cb2aa7761e3b8d7b51bdec63e02958
+4
+# internal_option {
+ADD_PASS_THROUGH_LOGIC_TO_INFERRED_RAMS
+ON
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+|
+}
+# end
+# complete
+
