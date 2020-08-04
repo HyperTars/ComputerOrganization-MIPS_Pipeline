@@ -11,18 +11,12 @@
 - 5-level Pipeline MIPS CPU includes
   - Step1: Fetch Instructions
     - Reg1: IF / ID - Store
-      - Store instruction
-      - 32 bit PC address (PC + 4)
   - Step2: Decode Instructions
     - Reg2: IF / ID - Read
-      - Send the last 16-bit immediate digits to the sign extension unit
-      - Send rs (for bypass), rt, rd register numbers to the register file
     - Reg2: ID / EXE - Store
   - Step3: Execution
     - Reg2: ID / EXE - Read
-      - Process ALU
     - Reg3: EXE / MEM
-      - ALU_Out write to EX / MEM
   - Step4: Memory Access
     - Reg3: EXE / MEM
     - Reg4: MEM / WB
@@ -39,5 +33,5 @@
   - Data Hazard
   - Control Hazard
   
-  See full [DesignThoughts](流水线设计思路.pdf)
+  See full [Design Thoughts 流水线设计思路](流水线设计思路.pdf)
   
